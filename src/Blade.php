@@ -27,12 +27,12 @@ class Blade {
 	public $cachePath;
 
 	/**
-	 * @var Illuminate\Container\Container
+	 * @var \Illuminate\Container\Container
 	 */
 	protected $container;
 
 	/**
-	 * @var Illuminate\View\Factory
+	 * @var \Illuminate\View\Factory
 	 */
 	protected $instance;
 
@@ -156,11 +156,11 @@ class Blade {
 		});
 	}
 
-	/**
-	 * Register the view environment.
-	 *
-	 * @return void
-	 */
+    /**
+     * Register the view environment.
+     *
+     * @return Factory
+     */
 	public function registerFactory()
 	{
 		// Next we need to grab the engine resolver instance that will be used by the

@@ -21,3 +21,4 @@ $cache = __DIR__ . '/cache';
 
 $blade = new Blade($views, $cache);
 echo $blade->view()->make('hello', ['name' => 'yolo']);
+echo $blade->view()->make('eve.hello', ['name' => 'yolo rolo']);
